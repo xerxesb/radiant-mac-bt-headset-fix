@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Spotify Bluetooth Headset Listener.xcodeproj">
+      location = "self:Radiant Player Bluetooth Headset Listener.xcodeproj">
    </FileRef>
 </Workspace>

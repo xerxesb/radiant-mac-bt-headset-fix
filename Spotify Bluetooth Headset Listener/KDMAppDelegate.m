@@ -1,13 +1,13 @@
 //
 //  KDMAppDelegate.m
-//  Spotify Bluetooth Headset Listener
+//  Radiant Bluetooth Headset Listener
 //
 //  Created by KillerDeMouches on 06/01/2014.
 //  Copyright (c) 2014 KDM Software. All rights reserved.
 //
 
 #import "KDMAppDelegate.h"
-#import "Spotify.h"
+#import "RadiantPlayer.h"
 
 @interface KDMAppDelegate()
 @property id eventMonitor;
@@ -33,20 +33,20 @@
         int keyState = (((keyFlags & 0xFF00) >> 8)) == 0xA;
 		
 		if(keyCode == 10 && keyFlags == 6972) {
-			SpotifyApplication * spotify = [SBApplication applicationWithBundleIdentifier:@"com.spotify.client"];
+			RadiantApplication * Radiant = [SBApplication applicationWithBundleIdentifier:@"com.sajidanwar.Radiant-Player"];
 			switch ([event data2]) {
 				case 786608: // Play / Pause on OS < 10.10 Yosemite
                 case 786637: // Play / Pause on OS >= 10.10 Yosemite
-					if([spotify playerState] == SpotifyEPlSPaused)
-						[spotify play];
+					if([Radiant playerState] == RadiantEPlSPaused)
+						[Radiant play];
 					else
-						[spotify pause];
+						[Radiant pause];
 					break;
 				case 786613: // Next
-					[spotify nextTrack];
+					[Radiant nextTrack];
 					break;
 				case 786614: // Previous
-					[spotify previousTrack];
+					[Radiant previousTrack];
 					break;
 				default:
 					NSLog(@"keyCode:%i keyFlags:%i keyState:%i %li",keyCode,keyFlags,keyState,(long)[event data2]);

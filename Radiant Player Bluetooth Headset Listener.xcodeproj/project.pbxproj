@@ -54,7 +54,7 @@
 		BFF9B29A187AB8E100F93B58 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
 		BFF9B29C187ABD3100F93B58 /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
 		BFF9B29E187B094C00F93B58 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
-		BFF9B2A0187B096400F93B58 /* Spotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
+		BFF9B2A0187B096400F93B58 /* RadiantPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadiantPlayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 		BFF9B25A187AB88C00F93B58 = {
 			isa = PBXGroup;
 			children = (
-				BFF9B26C187AB88D00F93B58 /* Spotify Bluetooth Headset Listener */,
-				BFF9B28A187AB88E00F93B58 /* Spotify Bluetooth Headset ListenerTests */,
+				BFF9B26C187AB88D00F93B58 /* Radiant Player Bluetooth Headset Listener */,
+				BFF9B28A187AB88E00F93B58 /* Radiant Player Bluetooth Headset ListenerTests */,
 				BFF9B265187AB88D00F93B58 /* Frameworks */,
 				BFF9B264187AB88D00F93B58 /* Products */,
 			);
@@ -121,16 +121,17 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		BFF9B26C187AB88D00F93B58 /* Spotify Bluetooth Headset Listener */ = {
+		BFF9B26C187AB88D00F93B58 /* Radiant Player Bluetooth Headset Listener */ = {
 			isa = PBXGroup;
 			children = (
-				BFF9B2A0187B096400F93B58 /* Spotify.h */,
+				BFF9B2A0187B096400F93B58 /* RadiantPlayer.h */,
 				BFF9B278187AB88D00F93B58 /* KDMAppDelegate.h */,
 				BFF9B279187AB88D00F93B58 /* KDMAppDelegate.m */,
 				BFF9B27B187AB88E00F93B58 /* MainMenu.xib */,
 				BFF9B27E187AB88E00F93B58 /* Images.xcassets */,
 				BFF9B26D187AB88D00F93B58 /* Supporting Files */,
 			);
+			name = "Radiant Player Bluetooth Headset Listener";
 			path = "Spotify Bluetooth Headset Listener";
 			sourceTree = "<group>";
 		};
@@ -146,12 +147,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BFF9B28A187AB88E00F93B58 /* Spotify Bluetooth Headset ListenerTests */ = {
+		BFF9B28A187AB88E00F93B58 /* Radiant Player Bluetooth Headset ListenerTests */ = {
 			isa = PBXGroup;
 			children = (
 				BFF9B290187AB88E00F93B58 /* Spotify_Bluetooth_Headset_ListenerTests.m */,
 				BFF9B28B187AB88E00F93B58 /* Supporting Files */,
 			);
+			name = "Radiant Player Bluetooth Headset ListenerTests";
 			path = "Spotify Bluetooth Headset ListenerTests";
 			sourceTree = "<group>";
 		};
@@ -210,14 +212,14 @@
 			attributes = {
 				CLASSPREFIX = KDM;
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "KDM Software";
+				ORGANIZATIONNAME = "Xerxes Battiwalla";
 				TargetAttributes = {
 					BFF9B283187AB88E00F93B58 = {
 						TestTargetID = BFF9B262187AB88D00F93B58;
 					};
 				};
 			};
-			buildConfigurationList = BFF9B25E187AB88C00F93B58 /* Build configuration list for PBXProject "Spotify Bluetooth Headset Listener" */;
+			buildConfigurationList = BFF9B25E187AB88C00F93B58 /* Build configuration list for PBXProject "Radiant Player Bluetooth Headset Listener" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -461,7 +463,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFF9B25E187AB88C00F93B58 /* Build configuration list for PBXProject "Spotify Bluetooth Headset Listener" */ = {
+		BFF9B25E187AB88C00F93B58 /* Build configuration list for PBXProject "Radiant Player Bluetooth Headset Listener" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFF9B292187AB88E00F93B58 /* Debug */,

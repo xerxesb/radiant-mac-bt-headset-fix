@@ -1,32 +1,32 @@
 /*
- * Spotify.h
+ * Radiant.h
  */
 
 #import <AppKit/AppKit.h>
 #import <ScriptingBridge/ScriptingBridge.h>
 
 
-@class SpotifyApplication, SpotifyTrack, SpotifyApplication;
+@class RadiantApplication, RadiantTrack, RadiantApplication;
 
-enum SpotifyEPlS {
-	SpotifyEPlSStopped = 'kPSS',
-	SpotifyEPlSPlaying = 'kPSP',
-	SpotifyEPlSPaused = 'kPSp'
+enum RadiantEPlS {
+	RadiantEPlSStopped = 'kPSS',
+	RadiantEPlSPlaying = 'kPSP',
+	RadiantEPlSPaused = 'kPSp'
 };
-typedef enum SpotifyEPlS SpotifyEPlS;
+typedef enum RadiantEPlS RadiantEPlS;
 
 
 
 /*
- * Spotify Suite
+ * Radiant Suite
  */
 
-// The Spotify application.
-@interface SpotifyApplication : SBApplication
+// The Radiant application.
+@interface RadiantApplication : SBApplication
 
-@property (copy, readonly) SpotifyTrack *currentTrack;  // The current playing track.
+@property (copy, readonly) RadiantTrack *currentTrack;  // The current playing track.
 @property NSInteger soundVolume;  // The sound output volume (0 = minimum, 100 = maximum)
-@property (readonly) SpotifyEPlS playerState;  // Is Spotify stopped, paused, or playing?
+@property (readonly) RadiantEPlS playerState;  // Is Radiant stopped, paused, or playing?
 @property double playerPosition;  // The player’s position within the currently playing track in seconds.
 @property (readonly) BOOL repeatingEnabled;  // Is repeating enabled in the current playback context?
 @property BOOL repeating;  // Is repeating on or off?
@@ -42,8 +42,8 @@ typedef enum SpotifyEPlS SpotifyEPlS;
 
 @end
 
-// A Spotify track.
-@interface SpotifyTrack : SBObject
+// A Radiant track.
+@interface RadiantTrack : SBObject
 
 @property (copy, readonly) NSString *artist;  // The artist of the track.
 @property (copy, readonly) NSString *album;  // The album of the track.
@@ -57,7 +57,7 @@ typedef enum SpotifyEPlS SpotifyEPlS;
 @property (copy, readonly) NSString *name;  // The name of the track.
 @property (copy, readonly) NSImage *artwork;  // The track's album cover.
 @property (copy, readonly) NSString *albumArtist;  // That album artist of the track.
-@property (copy) NSString *spotifyUrl;  // The URL of the track.
+@property (copy) NSString *RadiantUrl;  // The URL of the track.
 
 
 @end
@@ -69,7 +69,7 @@ typedef enum SpotifyEPlS SpotifyEPlS;
  */
 
 // The application's top level scripting object.
-@interface SpotifyApplication (StandardSuite)
+@interface RadiantApplication (StandardSuite)
 
 @property (copy, readonly) NSString *name;  // The name of the application.
 @property (readonly) BOOL frontmost;  // Is this the frontmost (active) application?
